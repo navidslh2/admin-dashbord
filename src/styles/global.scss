@@ -1,8 +1,14 @@
 @import "./variables.scss";
+@font-face {
+  font-family: "vazir";
+  font-style: normal;
+  src: url(../assets/fonts/Vazir-Black.eot);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "vazir";
 }
 
 a {
@@ -11,7 +17,6 @@ a {
 }
 
 .main {
-  font-family: "Lalezar";
   background-color: $main-bg;
   color: $main-color;
 }
@@ -19,12 +24,12 @@ a {
   display: flex;
 }
 .menuContainer {
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    padding: 5px 20px;
-    border-left: 2px solid $soft-bg;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 20px;
+  border-left: 2px solid $soft-bg;
 }
-.contentContainer{
-       padding: 5px 20px;
+.contentContainer {
+  padding: 5px 20px;
 }
