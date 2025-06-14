@@ -90,7 +90,7 @@ export const menu = [
         url: "/",
         icon: "/backup.svg",
         alt: "backup",
-      }
+      },
     ],
   },
   {
@@ -103,7 +103,74 @@ export const menu = [
         url: "/",
         icon: "/chart.svg",
         alt: "chart",
-      }
+      },
     ],
-  }
+  },
+];
+
+export const topDealsUsers = [
+  {
+    id: 1,
+    img: "/user.jpg",
+    username: "amir",
+    email: "amir@gmail.com",
+    amount: "3.000.000",
+    alt:'userimage'
+  },
+  {
+    id: 2,
+    img: "/user.jpg",
+    username: "amir",
+    email: "amir@gmail.com",
+    amount: "3.000.000",
+    alt:'userimage'
+  },
+  {
+    id: 3,
+    img: "/user.jpg",
+    username: "amir",
+    email: "amir@gmail.com",
+    amount: "3.000.000",
+    alt:'userimage'
+  },
+  {
+    id: 4,
+    img: "/user.jpg",
+    username: "amir",
+    email: "amir@gmail.com",
+    amount: "3.000.000",
+    alt:'userimage'
+  },
+  {
+    id: 5,
+    img: "/user.jpg",
+    username: "amir",
+    email: "amir@gmail.com",
+    amount: "3.000.000",
+    alt:'userimage'
+  },
+  {
+    id: 6,
+    img: "/user.jpg",
+    username: "amir",
+    email: "amir@gmail.com",
+    amount: "3.000.000",
+    alt:'userimage'
+  },
+  {
+    id: 7,
+    img: "/user.jpg",
+    username: "amir",
+    email: "amir@gmail.com",
+    amount: "3.000.000",
+    alt:'userimage'
+  },
+  {
+    id: 8,
+    img: "/user.jpg",
+    username: "amir",
+    email: "amir@gmail.com",
+    amount: "3.000.000",
+    alt:'userimage'
+  },
 ];

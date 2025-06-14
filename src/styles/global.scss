@@ -1,4 +1,5 @@
-@import "./variables.scss";
+@use "./index.scss" as *;
+
 @font-face {
   font-family: "vazir";
   font-style: normal;
@@ -33,5 +34,6 @@ a {
   border-left: 2px solid $soft-bg;
 }
 .contentContainer {
+  width: 100%;
   padding: 5px 20px;
 }

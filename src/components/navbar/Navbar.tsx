@@ -1,10 +1,11 @@
+
 import "./navbar.scss";
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <img src="../../../public/logo.png" alt="logo" />
+        <img src="/logo.png" alt="logo" />
         <p className="name">نوید صالحی</p>
       </div>
       <div className="icons">
