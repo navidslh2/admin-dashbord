@@ -1,23 +1,41 @@
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @mixin flex-column-top {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
 }
 @mixin flex-column-start {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+@mixin flex-column-end {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+@mixin flex-column-space-between {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+@mixin flex-column-space-between-end {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
 }
 @mixin flex-space-between {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
 }

@@ -1,0 +1,41 @@
+@use "../../styles/index.scss" as *;
+.chartBox {
+  width: 100%;
+  height: 100%;
+  @include flex-space-between;
+  .boxInfo {
+    width: 100%;
+    height: 100%;
+    @include flex-column-space-between;
+    flex: 3;
+    .title {
+      @include flex-space-between;
+      img {
+      }
+      span {
+      }
+    }
+    h3 {
+    }
+    .link {
+    }
+  }
+  .chartInfo {
+    width: 100%;
+    height: 100%;
+    @include flex-column-space-between-end;
+    flex: 2;
+    .chart {
+      width: 100%;
+      height: 100%;
+    }
+    .texts {
+        @include flex-column-end;
+        gap: 5px;
+      .percentage {
+      }
+      .duration {
+      }
+    }
+  }
+}
