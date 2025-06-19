@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Line, LineChart, ResponsiveContainer, Tooltip } from "recharts";
-import "./chatBox.scss";
+import "./chartBox.scss";
 
 type Props = {
     color:string;

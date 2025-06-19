@@ -115,7 +115,7 @@ export const topDealsUsers = [
     username: "amir",
     email: "amir@gmail.com",
     amount: "3.000.000",
-    alt:'userimage'
+    alt: "userimage",
   },
   {
     id: 2,
@@ -123,7 +123,7 @@ export const topDealsUsers = [
     username: "amir",
     email: "amir@gmail.com",
     amount: "3.000.000",
-    alt:'userimage'
+    alt: "userimage",
   },
   {
     id: 3,
@@ -131,7 +131,7 @@ export const topDealsUsers = [
     username: "amir",
     email: "amir@gmail.com",
     amount: "3.000.000",
-    alt:'userimage'
+    alt: "userimage",
   },
   {
     id: 4,
@@ -139,7 +139,7 @@ export const topDealsUsers = [
     username: "amir",
     email: "amir@gmail.com",
     amount: "3.000.000",
-    alt:'userimage'
+    alt: "userimage",
   },
   {
     id: 5,
@@ -147,7 +147,7 @@ export const topDealsUsers = [
     username: "amir",
     email: "amir@gmail.com",
     amount: "3.000.000",
-    alt:'userimage'
+    alt: "userimage",
   },
   {
     id: 6,
@@ -155,7 +155,7 @@ export const topDealsUsers = [
     username: "amir",
     email: "amir@gmail.com",
     amount: "3.000.000",
-    alt:'userimage'
+    alt: "userimage",
   },
   {
     id: 7,
@@ -163,7 +163,7 @@ export const topDealsUsers = [
     username: "amir",
     email: "amir@gmail.com",
     amount: "3.000.000",
-    alt:'userimage'
+    alt: "userimage",
   },
   {
     id: 8,
@@ -171,25 +171,122 @@ export const topDealsUsers = [
     username: "amir",
     email: "amir@gmail.com",
     amount: "3.000.000",
-    alt:'userimage'
+    alt: "userimage",
   },
 ];
 
 export const chartBoxUser = {
-  color:"#8884d8",
-  icon:"/user.svg",
-  alt:"user",
-  title:"تعداد کل کاربران",
-  number:"11.220",
-  dataKey:"users",
-  percentage:45,
+  color: "#8884d8",
+  icon: "/user.svg",
+  alt: "user",
+  title: "تعداد کل کاربران",
+  number: "11.220",
+  dataKey: "users",
+  percentage: 45,
   chartData: [
-    {name:"Sun", users:400},
-    {name:"Mon", users:600},
-    {name:"Tue", users:500},
-    {name:"Wed", users:700},
-    {name:"Thu", users:400},
-    {name:"Fri", users:500},
-    {name:"Sat", users:450},
-  ]
-}
+    { name: "Sun", users: 300 },
+    { name: "Mon", users: 600 },
+    { name: "Tue", users: 500 },
+    { name: "Wed", users: 700 },
+    { name: "Thu", users: 400 },
+    { name: "Fri", users: 500 },
+    { name: "Sat", users: 450 },
+  ],
+};
+
+export const chartBoxProduct = {
+  color: "red",
+  icon: "/product.svg",
+  alt: "product",
+  title: "تعداد کل محصولات",
+  number: "230",
+  dataKey: "products",
+  percentage: 21,
+  chartData: [
+    { name: "Sun", products: 400 },
+    { name: "Mon", products: 600 },
+    { name: "Tue", products: 500 },
+    { name: "Wed", products: 700 },
+    { name: "Thu", products: 400 },
+    { name: "Fri", products: 500 },
+    { name: "Sat", products: 450 },
+  ],
+};
+
+export const chartBoxRevenue = {
+  color: "teal",
+  icon: "/revenueIcon.svg",
+  alt: "revenue",
+  title: " کل درآمد",
+  number: "...",
+  dataKey: "revenue",
+  percentage: -12,
+  chartData: [
+    { name: "Sun", revenue: 400 },
+    { name: "Mon", revenue: 600 },
+    { name: "Tue", revenue: 500 },
+    { name: "Wed", revenue: 700 },
+    { name: "Thu", revenue: 400 },
+    { name: "Fri", revenue: 500 },
+    { name: "Sat", revenue: 450 },
+  ],
+};
+
+export const chartBoxConversion = {
+  color: "gold",
+  icon: "/conversionIcon.svg",
+  alt: "conversion",
+  title: " نسبت کل",
+  number: "2.6",
+  dataKey: "ratio",
+  percentage: 12,
+  chartData: [
+    { name: "Sun", ratio: 400 },
+    { name: "Mon", ratio: 600 },
+    { name: "Tue", ratio: 500 },
+    { name: "Wed", ratio: 700 },
+    { name: "Thu", ratio: 400 },
+    { name: "Fri", ratio: 500 },
+    { name: "Sat", ratio: 450 },
+  ],
+};
+
+export const barChartBoxVisit = {
+  title: "تعداد کل بازدیدها",
+  color: "#ff8042",
+  dataKey: "visit",
+  chartData: [
+    { name: "Sun", visit: 400 },
+    { name: "Mon", visit: 600 },
+    { name: "Tue", visit: 500 },
+    { name: "Wed", visit: 700 },
+    { name: "Thu", visit: 400 },
+    { name: "Fri", visit: 500 },
+    { name: "Sat", visit: 450 },
+  ],
+};
+
+export const barChartBoxProfit = {
+  title: "درآمد",
+  color: "#ff8042",
+  dataKey: "profit",
+  chartData: [
+    { name: "Sun", profit: 400 },
+    { name: "Mon", profit: 600 },
+    { name: "Tue", profit: 500 },
+    { name: "Wed", profit: 700 },
+    { name: "Thu", profit: 400 },
+    { name: "Fri", profit: 500 },
+    { name: "Sat", profit: 450 },
+  ],
+};
+export const pieChartBoxSell = {
+  title: "فروش به تفکیک",
+  dataKey: "value",
+  chartData: [
+    { name: "Mobile", value: 400, color: "lightblue" },
+    { name: "Tablet", value: 300, color: "lightgreen" },
+    { name: "Labtop", value: 300, color: "yellow" },
+    { name: "Pc", value: 200, color: "brown" },
+  ],
+};

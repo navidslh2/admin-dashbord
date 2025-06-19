@@ -10,14 +10,6 @@
     flex: 3;
     .title {
       @include flex-space-between;
-      img {
-      }
-      span {
-      }
-    }
-    h3 {
-    }
-    .link {
     }
   }
   .chartInfo {
@@ -32,10 +24,6 @@
     .texts {
         @include flex-column-end;
         gap: 5px;
-      .percentage {
-      }
-      .duration {
-      }
     }
   }
 }
