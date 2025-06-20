@@ -290,3 +290,17 @@ export const pieChartBoxSell = {
     { name: "Pc", value: 200, color: "brown" },
   ],
 };
+
+export const areaChartBoxRevenue = {
+  title: " آنالیز درآمد ",
+  dataKey: "value",
+  chartData: [
+    { name: "Su", mobile: 4000, labtop: 3400, tablet: 2400, pc: 2300 },
+    { name: "Mo", mobile: 3000, labtop: 2500, tablet: 2210, pc: 2000 },
+    { name: "Tu", mobile: 2000, labtop: 1700, tablet: 1400, pc: 1000 },
+    { name: "We", mobile: 2780, labtop: 2500, tablet: 2000, pc: 1800 },
+    { name: "Th", mobile: 1890, labtop: 1500, tablet: 1200, pc: 1000 },
+    { name: "Fr", mobile: 2390, labtop: 2000, tablet: 1500, pc: 1200 },
+    { name: "Sa", mobile: 3490, labtop: 3000, tablet: 2400, pc: 2000 },
+  ],
+};

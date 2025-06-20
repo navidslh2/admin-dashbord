@@ -1,10 +1,11 @@
-import { BarChart } from "recharts";
+
 import ChartBox from "../../components/chartBox/ChartBox";
 import TopDeals from "../../components/topdeals/TopDeals";
-import { barChartBoxProfit, barChartBoxVisit, chartBoxConversion, chartBoxProduct, chartBoxRevenue, chartBoxUser, pieChartBoxSell } from "../../data";
+import { areaChartBoxRevenue, barChartBoxProfit, barChartBoxVisit, chartBoxConversion, chartBoxProduct, chartBoxRevenue, chartBoxUser, pieChartBoxSell } from "../../data";
 import "./home.scss";
-import BarChartBox from "../../components/barChartBox/barChartBox";
+import BarChartBox from "../../components/barChartBox/BarChartBox";
 import PieChartBox from "../../components/pieChartBox/PieChartBox";
+import AreaChartBox from "../../components/areaChartbox/AreaChartBox";
 
 const Home = () => {
   return (
@@ -27,7 +28,9 @@ const Home = () => {
       <div className="box box6">
         <ChartBox {...chartBoxConversion} />
       </div>
-      <div className="box box7">box7</div>
+      <div className="box box7">
+        <AreaChartBox  {...areaChartBoxRevenue}/>
+      </div>
       <div className="box box8">
         <BarChartBox {...barChartBoxVisit}/>
       </div>
