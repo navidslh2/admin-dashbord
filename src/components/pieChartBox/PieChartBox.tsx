@@ -1,9 +1,15 @@
 import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
+import "./pieChartBox.scss"
 
+type ChartItem = {
+  name: string,
+  value: number,
+  color: string
+}
 type Props = {
   title: string;
   dataKey: string;
-  chartData: object[]
+  chartData: ChartItem[]
 };
 
 const PieChartBox = (props: Props) => {
@@ -31,12 +37,15 @@ const PieChartBox = (props: Props) => {
           </PieChart>
         </ResponsiveContainer>
       </div>
-      <div className="item">
+      <div className="items">
         {props.chartData.map((item, index) => (
-          <>
-            <div>{item.name}</div>
-            <div>{item.value}</div>
-          </>
+          <div className="item" key={index}>
+            <div className="title">
+              <div className="dot"  style={{background:item.color}}/>
+              <span>{item.name}</span>
+            </div>
+            <span>{item.value}</span>
+          </div>
         ))}
       </div>
     </div>
