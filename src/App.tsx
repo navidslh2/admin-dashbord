@@ -1,12 +1,12 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import Home from "./pages/home/Home";
 import Users from "./pages/users/Users";
 import Products from "./pages/products/Products";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Menu from "./components/menu/Menu";
-import Login from "./pages/login/Login";
-import "./styles/global.scss"
+import "./styles/global.scss";
+import UnderConstruction from "./components/UnderConstruction/UnderConstruction";
+import Home from "./pages/home/home";
 
 function App() {
   const Layout = () => {
@@ -35,6 +35,38 @@ function App() {
           element: <Home />,
         },
         {
+          path: "/profile",
+          element: <UnderConstruction />,
+        },
+        {
+          path: "/product",
+          element: <UnderConstruction />,
+        },
+        {
+          path: "/order",
+          element: <UnderConstruction />,
+        },
+        {
+          path: "/element",
+          element: <UnderConstruction />,
+        },
+                {
+          path: "/note",
+          element: <UnderConstruction />,
+        },
+                {
+          path: "/setting",
+          element: <UnderConstruction />,
+        },
+                {
+          path: "/backup",
+          element: <UnderConstruction />,
+        },
+                {
+          path: "/chart",
+          element: <UnderConstruction />,
+        },
+        {
           path: "/users",
           element: <Users />,
         },
@@ -44,10 +76,6 @@ function App() {
         },
       ],
     },
-    {
-      path:"/login",
-      element: <Login />
-    }
   ]);
 
   return <RouterProvider router={router} />;

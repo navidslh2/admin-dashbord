@@ -39,8 +39,20 @@
     grid-column: span 1;
     grid-row: span 3;
   }
-    .box7 {
+  .box7 {
     grid-column: span 2;
     grid-row: span 2;
+  }
+  @include xl {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include lg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include md {
+    grid-template-columns: repeat(1, 1fr);
+    .box7 {
+      display: none;
+    }
   }
 }

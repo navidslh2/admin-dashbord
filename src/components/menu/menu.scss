@@ -1,28 +1,40 @@
 @use "../../styles/index.scss" as *;
 
 .menu {
-    margin: 25px 0;
+  height: 760px;
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  .item {
     display: flex;
     flex-direction: column;
-    .item {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 18px;
-        .title{
-            font-size: 12px;
-            color: $soft-color;
-            margin-bottom: 10px;
-        }
-        .listItem{
-            display: flex;
-            align-items: center;
-            justify-content: start;
-            gap: 5px;
-            padding: 10px;
-            border-radius: 10px;
-            &:hover{
-                background-color: $soft-bg;
-            }
-        }
+    margin-bottom: 18px;
+    .title {
+      font-size: 12px;
+      color: $soft-color;
+      margin-bottom: 10px;
+      @include sm {
+        display: none;
+      }
     }
+    .listItem {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 5px;
+      padding: 10px;
+      border-radius: 10px;
+      &:hover {
+        background-color: $soft-bg;
+      }
+      @include lg {
+        span {
+          display: none;
+        }
+      }
+      &.active {
+        background-color: $soft-bg;
+      }
+    }
+  }
 }

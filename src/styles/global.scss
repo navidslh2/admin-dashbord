@@ -31,10 +31,13 @@ a {
   width: 250px;
   display: flex;
   flex-direction: column;
-  padding: 5px 20px;
+  padding: 0 20px;
   border-left: 2px solid $soft-bg;
+  @include lg {
+    width: max-content ;
+  }
 }
 .contentContainer {
   width: 100%;
-  padding: 5px 20px;
+  padding: 0 20px;
 }

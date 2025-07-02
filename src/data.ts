@@ -6,14 +6,14 @@ export const menu = [
       {
         id: 1,
         title: "خانه",
-        url: "/home",
+        url: "/",
         icon: "/home.svg",
         alt: "homepge",
       },
       {
         id: 2,
         title: "پروفایل",
-        url: "/",
+        url: "/profile",
         icon: "/profile.svg",
         alt: "homepge",
       },
@@ -33,14 +33,14 @@ export const menu = [
       {
         id: 2,
         title: "محصولات",
-        url: "/products",
+        url: "/product",
         icon: "/product.svg",
         alt: "product",
       },
       {
         id: 3,
         title: "سفارشات",
-        url: "/",
+        url: "/order",
         icon: "/order.svg",
         alt: "order",
       },
@@ -53,21 +53,21 @@ export const menu = [
       {
         id: 1,
         title: "المان ها",
-        url: "/",
+        url: "/element",
         icon: "/element.svg",
         alt: "element",
       },
       {
         id: 2,
         title: "یادداشت ها",
-        url: "/",
+        url: "/note",
         icon: "/note.svg",
         alt: "note",
       },
       {
         id: 3,
         title: "فرم ها",
-        url: "/",
+        url: "/form",
         icon: "/form.svg",
         alt: "form",
       },
@@ -80,14 +80,14 @@ export const menu = [
       {
         id: 1,
         title: "تنظیمات",
-        url: "/",
+        url: "/setting",
         icon: "/setting.svg",
         alt: "setting",
       },
       {
         id: 2,
         title: "پشتیبان گیری",
-        url: "/",
+        url: "/backup",
         icon: "/backup.svg",
         alt: "backup",
       },
@@ -100,7 +100,7 @@ export const menu = [
       {
         id: 1,
         title: "نمودارها",
-        url: "/",
+        url: "/chart",
         icon: "/chart.svg",
         alt: "chart",
       },
@@ -304,3 +304,15 @@ export const areaChartBoxRevenue = {
     { name: "Sa", mobile: 3490, labtop: 3000, tablet: 2400, pc: 2000 },
   ],
 };
+
+export const  rows = [
+  { id: 1, lastName: "صالحی", firstName: "نوید", age: 30, profile: "/user.jpg" },
+  { id: 2, lastName: "", firstName: "Cersei", age: 31, profile: "/user.jpg" },
+  { id: 3, lastName: "Lannister", firstName: "Jaime", age: 31, profile: "/user.jpg" },
+  { id: 4, lastName: "Stark", firstName: "Arya", age: 11, profile: "/user.jpg" },
+  { id: 5, lastName: "Targaryen", firstName: "Daenerys", age: 18, profile: "/user.jpg" },
+  { id: 6, lastName: "Melisandre", firstName: "Daenerys", age: 150, profile: "/user.jpg" },
+  { id: 7, lastName: "Clifford", firstName: "Ferrara", age: 44, profile: "/user.jpg" },
+  { id: 8, lastName: "Frances", firstName: "Rossini", age: 36, profile: "/user.jpg" },
+  { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65, profile: "/user.jpg" },
+];
